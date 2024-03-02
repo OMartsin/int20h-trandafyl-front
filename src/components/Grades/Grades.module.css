@@ -2,4 +2,26 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+  width: 100%;
+}
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  text-align: left;
+}
+.currentCourses {
+  background-color: white;
+  border-radius: 32px;
+  padding: 16px;
+}
+.courseInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.column {
+  flex: 0 0 30%;
+  text-align: center;
 }
