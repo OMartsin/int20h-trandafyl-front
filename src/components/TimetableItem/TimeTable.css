@@ -1,0 +1,63 @@
+.container {
+    display: flex;
+    flex-direction: column; 
+    justify-content:first baseline; 
+    align-items:center; 
+    border-radius: 10%;
+    min-width: 500px;
+    min-height: 250px;
+    
+ 
+    
+}
+.class-time {
+    display: flex;
+    align-items:baseline;
+    min-width: 450px;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 25px;
+    margin-bottom: 2rem;
+    
+}
+.class {
+    border: 1px solid #ddd; 
+    border-radius: 4px;
+    flex-grow: 4;
+  
+}
+.class-info
+{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: flex-start;
+    
+}
+
+
+
+.time {
+    font-weight: bold;
+    color: #333;
+   
+}
+
+
+.info {
+    font-size: 26px;
+    color: #333;
+}
+
+
+.teacher {
+    font-style: italic;
+    color: #666;
+    font-size: 20px;
+}
+
+.type {
+    font-weight: bold;
+    color: #666;
+    font-size: 20px;
+}
