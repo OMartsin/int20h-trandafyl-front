@@ -6,7 +6,49 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0 60px;
   width: 100%;
-  height: 90px;
+  padding: 0 60px;
+  height: 72px;
+  box-sizing: border-box;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.languages,
+.link,
+.logo,
+.profile {
+  width: 15%;
+}
+.languages {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.link {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.selected {
+  border-bottom: 2px solid #529050;
+}
+.profile {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: right;
+}
+.profilePic {
+  height: 48px;
+  border-radius: 24px;
+  overflow: hidden;
 }

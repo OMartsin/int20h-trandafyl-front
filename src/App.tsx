@@ -7,6 +7,8 @@ import Performance from "./pages/Performance/Performance";
 import Courses from "./pages/Courses/Courses";
 import Schedule from "./pages/Schedule/Schedule";
 import Header from "./components/Header/Header";
+import Chats from "./pages/Chats/Chats";
+import Profile from "./pages/Profile/Profile";
 
 function App() {
   return (
@@ -47,6 +49,24 @@ function App() {
               <React.Fragment>
                 <Header />
                 <Performance />
+              </React.Fragment>
+            }
+          />
+          <Route
+            path="/chats/*"
+            element={
+              <React.Fragment>
+                <Header />
+                <Chats />
+              </React.Fragment>
+            }
+          />
+          <Route
+            path="/profile/*"
+            element={
+              <React.Fragment>
+                <Header />
+                <Profile />
               </React.Fragment>
             }
           />
