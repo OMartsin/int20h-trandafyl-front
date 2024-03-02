@@ -1,14 +1,10 @@
 import styles from "./Auth.module.css";
 import AuthButton from "../../components/AuthButton/AuthButton";
 
-interface AuthService {
-  handleSignIn: () => Promise<void>;
-}
-
 function Auth() {
   return (
     <div className={styles.container}>
-      <img src="logo.svg" height={"56px"} />
+      <img src="logo.svg" height={"56px"} alt="logo" />
       <div className={styles.text}>
         <h1 className={styles.title}>
           Просте навчання та цікаве позакласне життя

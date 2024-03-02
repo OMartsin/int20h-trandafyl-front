@@ -1,0 +1,89 @@
+.container {
+  position: fixed;
+  top: 70px;
+  right: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 16px;
+}
+.notificationList {
+  height: 320px;
+  overflow-y: scroll;
+}
+.notificationContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  overflow: hidden;
+  max-height: 80px;
+  margin-bottom: 16px;
+  margin-right: 16px;
+}
+.data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+  width: 85%;
+  gap: 4px;
+}
+.mainInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.time {
+  color: #555;
+}
+.title,
+.name {
+  font-weight: bold;
+}
+.title,
+.text {
+  text-align: left;
+}
+.text {
+  font-size: 14px;
+}
+.imageContainer {
+  height: 32px;
+  width: 32px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+.image {
+  height: 32px;
+  width: 32px;
+}
+
+.read {
+  background-color: #e0e0e0;
+  color: #555;
+}
+
+.unread {
+  background-color: #ffffff;
+  color: #000;
+}
+
+.read,
+.unread {
+  border-radius: 16px;
+  padding: 8px;
+}
+.deleteButton {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

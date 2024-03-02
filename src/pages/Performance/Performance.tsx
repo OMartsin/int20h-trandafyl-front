@@ -2,7 +2,7 @@ import styles from "./Performance.module.css";
 
 function Performance() {
   return (
-    <div>
+    <div className={styles.container}>
       <h1>PERFORMANCE</h1>
     </div>
   );

@@ -1,9 +1,5 @@
 import styles from "./AuthButton.module.css";
 
-interface ButtonInterface {
-  onClick: () => void;
-}
-
 function AuthButton() {
   return (
     <button className={styles.button}>

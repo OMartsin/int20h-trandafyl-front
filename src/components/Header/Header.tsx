@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import styles from "./Header.module.css";
+import Notifications from "../Notifications/Notifications";
 
 function Header() {
   const [showDropDownMenu, setShowDropDownMenu] = useState(false);
@@ -64,7 +65,7 @@ function Header() {
       </Link>
       <div className={styles.profile}>
         <Link to="/chats" className={styles.profileLink}>
-          <img src="messages.png" height={"24px"} />
+          <img src="messages.png" height={"24px"} alt="messages" />
         </Link>
         <div className={styles.notifications}>
           <img
@@ -73,9 +74,7 @@ function Header() {
             alt="notifications"
             height={"24px"}
           />
-          {showNotifications && (
-            <div className={styles.notificationsContainer}></div>
-          )}
+          {showNotifications && <Notifications />}
         </div>
         <Link to="/profile" className={styles.profileLink}>
           <div className={styles.profilePic}>
