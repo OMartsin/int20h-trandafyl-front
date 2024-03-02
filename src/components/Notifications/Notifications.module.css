@@ -11,6 +11,16 @@
   border-radius: 16px;
   padding: 16px;
 }
+.identificator {
+  position: absolute;
+  top: -45px;
+  right: 15px;
+  background-color: #529050;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  z-index: 2;
+}
 .notificationList {
   height: 320px;
   overflow-y: scroll;
