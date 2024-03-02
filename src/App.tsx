@@ -3,7 +3,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Auth from "./pages/Auth/Auth";
 import Events from "./pages/Events/Events";
-import Performance from "./pages/Performance/Performance";
+import Studying from "./pages/Studying/Studying";
 import Courses from "./pages/Courses/Courses";
 import Schedule from "./pages/Schedule/Schedule";
 import Header from "./components/Header/Header";
@@ -44,11 +44,11 @@ function App() {
             }
           />
           <Route
-            path="/performance/*"
+            path="/studying/*"
             element={
               <React.Fragment>
                 <Header />
-                <Performance />
+                <Studying />
               </React.Fragment>
             }
           />

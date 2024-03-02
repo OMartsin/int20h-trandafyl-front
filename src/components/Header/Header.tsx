@@ -56,12 +56,12 @@ function Header() {
         <p>Розклад</p>
       </Link>
       <Link
-        to="/performance"
+        to="/studying"
         className={`${styles.link} ${
-          activeLink === "/performance" && styles.selected
+          activeLink === "/studying" && styles.selected
         }`}
       >
-        <p>Успішність</p>
+        <p>Навчання</p>
       </Link>
       <div className={styles.profile}>
         <Link to="/chats" className={styles.profileLink}>
@@ -73,6 +73,7 @@ function Header() {
             onClick={toggleNotifications}
             alt="notifications"
             height={"24px"}
+            style={{ cursor: "pointer" }}
           />
           {showNotifications && <Notifications />}
         </div>

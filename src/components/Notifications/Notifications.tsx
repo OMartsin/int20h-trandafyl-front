@@ -129,9 +129,13 @@ function Notifications() {
       setSelectedNotification(null);
     }
   };
+  const hasUnreadNotifications = notifications.some(
+    (notification) => !notification.read
+  );
 
   return (
     <div className={styles.container}>
+      {hasUnreadNotifications && <div className={styles.identificator}></div>}
       <div className={styles.notificationList}>
         {notifications.map((notification, index) => (
           <div
