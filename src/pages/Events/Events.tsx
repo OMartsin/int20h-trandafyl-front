@@ -1,4 +1,4 @@
-import Event from "../../components/Event/Event";
+import Event from "./../../components/Event/Event"
 import styles from "./Events.module.css"
 interface EventData
 {
@@ -69,7 +69,7 @@ function Events() {
   return (
     <div className={styles.container}>
      {MockEventData.map((event, index) => (
-  <div><Event key={index} parameter={event} /></div>
+  <div className={styles.event}><Event key={index} parameter={event} /></div>
   
 ))}
     </div>
