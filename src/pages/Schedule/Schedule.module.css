@@ -1,0 +1,22 @@
+.schedule {
+    display: flex;
+    justify-content: center; 
+    flex-direction: row;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    flex-wrap: wrap;  
+  }
+  
+  .day-column {
+    flex: 1; 
+    display: flex;
+    justify-content: center; 
+    overflow-y: auto;
+    overflow-x: auto;
+
+
+  }
+  
+
+  
