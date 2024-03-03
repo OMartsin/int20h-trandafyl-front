@@ -74,6 +74,12 @@ function Attendance() {
         <img src={chooseEmoji()} alt="emoji" height={"24px"} />
       </div>
       <div className={styles.chartContainer}>
+        <div className={styles.days}>
+          <p>Пн</p>
+          <p>Ср</p>
+          <p>Пт</p>
+          <p>Нд</p>
+        </div>
         <div className={styles.attendanceGraph}>
           {mockAttendanceData.map((day, index) => (
             <div
@@ -87,7 +93,6 @@ function Attendance() {
         </div>
       </div>
     </div>
-    
   );
 }
 

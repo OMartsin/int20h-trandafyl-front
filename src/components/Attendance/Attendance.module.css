@@ -14,10 +14,22 @@
   width: 100%;
   gap: 16px;
 }
+.chartContainer {
+  display: flex;
+  flex-direction: row;
+}
+.days {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 22px;
+  left: 40px;
+  top: 28px;
+}
 .attendanceGraph {
   background-color: white;
   border-radius: 32px;
-  padding: 32px;
+  padding: 32px 32px 32px 56px;
   display: grid;
   grid-template-rows: repeat(7, 1fr); /* days of the week */
   grid-template-columns: repeat(52, 1fr); /* weeks of the year */
