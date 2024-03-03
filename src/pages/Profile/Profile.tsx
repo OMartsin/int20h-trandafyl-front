@@ -68,7 +68,9 @@ function Profile() {
       </div>
 
       <div className={styles.statisticsContainer}>
-        <div className={styles.gradesContainer}></div>
+        <div className={styles.gradesContainer}>
+          <h2>Аналітика та статистика</h2>
+        </div>
       </div>
     </div>
   );
