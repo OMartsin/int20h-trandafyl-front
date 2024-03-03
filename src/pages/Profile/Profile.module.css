@@ -1,0 +1,94 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  top: 90px;
+  left: 0;
+  width: 100%;
+  padding: 0 60px 60px;
+  box-sizing: border-box;
+  overflow-y: hidden;
+  height: 90vh;
+}
+.firstColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.profilePic,
+.personalInfo,
+.coursesContainer,
+.name,
+.gradesContainer {
+  background-color: white;
+  width: 100%;
+  border-radius: 32px;
+  padding: 16px;
+}
+.profilePic {
+  height: 34%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.personalInfo {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+  padding-left: 32px;
+}
+.edit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+}
+.secondColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 18%;
+}
+.name {
+  height: 12%;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coursesContainer {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+  padding-left: 32px;
+}
+.statisticsContainer {
+  width: 40%;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.title {
+  font-weight: bold;
+}

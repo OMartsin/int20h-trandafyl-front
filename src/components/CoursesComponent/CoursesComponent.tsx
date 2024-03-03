@@ -16,10 +16,10 @@ function CoursesComponent({ courses }: CoursesProps) {
     <div className={styles.container}>
       {courses.map((course, index) => (
         <div className={styles.course}>
-          <p>{course.name}</p>
+          <p style={{ fontWeight: "bold" }}>{course.name}</p>
           <p>{course.description}</p>
-          <p>{course.credits}</p>
-          <p>{course.teachers.join(", ")}</p>
+          <p>Кількість кредитів: {course.credits}</p>
+          <p>Викладачі: {course.teachers.join(", ")}</p>
         </div>
       ))}
     </div>
