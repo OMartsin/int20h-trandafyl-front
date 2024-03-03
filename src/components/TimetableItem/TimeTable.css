@@ -13,7 +13,7 @@
 .class-time {
     display: flex;
     align-items:baseline;
-    min-width: 450px;
+    width: 90%;
     justify-content: space-between;
     padding: 20px;
     font-size: 25px;
@@ -26,38 +26,34 @@
     flex-grow: 4;
   
 }
-.class-info
-{
+.class-info {
     display: flex;
-    flex-direction: column; 
-    justify-content: space-between; 
+    flex-direction: column;
     align-items: flex-start;
-    
+    width: 100%;
+  
 }
-
-
-
-.time {
-    font-weight: bold;
-    color: #333;
-   
-}
-
 
 .info {
-    font-size: 26px;
+    font-size: 40px;
     color: #333;
+    margin-bottom: 1rem;
+    margin-left: 8rem;
 }
-
 
 .teacher {
     font-style: italic;
     color: #666;
     font-size: 20px;
+    margin-bottom: 5px;
+    margin-left: 8rem;
 }
 
 .type {
     font-weight: bold;
     color: #666;
     font-size: 20px;
+    align-self: flex-end;
+    margin-bottom: 4rem;
+    margin-right: 3rem;
 }
