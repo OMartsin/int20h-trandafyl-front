@@ -29,14 +29,8 @@ function Header() {
       </div>
       <Link to="/courses" className={styles.link}>
         <p className={activeLink === "/courses" ? styles.selected : ""}>
-          Курси
+          Мої курси
         </p>
-        <img
-          src={showDropDownMenu ? "closed.png" : "opened.png"}
-          alt="closed"
-          onClick={toggleDropDownMenu}
-          height={"16px"}
-        />
       </Link>
       <Link
         to="/events"

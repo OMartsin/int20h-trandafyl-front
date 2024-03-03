@@ -46,13 +46,21 @@ function Grades() {
         <div className={styles.currentCourses}>
           <h3>Поточні курси</h3>
           <div className={styles.courseInfo}>
-            <p className={styles.column}>Дисципліна</p>
-            <p className={styles.column}>Поточний контроль</p>
-            <p className={styles.column}>Семестровий контроль</p>
+            <p className={styles.column} style={{ fontWeight: "bold" }}>
+              Дисципліна
+            </p>
+            <p className={styles.column} style={{ fontWeight: "bold" }}>
+              Поточний контроль
+            </p>
+            <p className={styles.column} style={{ fontWeight: "bold" }}>
+              Семестровий контроль
+            </p>
           </div>
           {mockGradesData.map(({ course, grades }, index) => (
             <div key={index} className={styles.courseInfo}>
-              <p className={styles.column}>{course}</p>
+              <p className={styles.column} style={{ fontWeight: "bold" }}>
+                {course}
+              </p>
               <p className={styles.column}>{calculateGradesSum(grades)} / 45</p>
               <p className={styles.column}>0 / 55</p>
             </div>
