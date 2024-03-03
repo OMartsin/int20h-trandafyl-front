@@ -9,7 +9,7 @@ function Header() {
   const [activeLink, setActiveLink] = useState("/");
   const location = useLocation();
 
-  const toggleDropDownMenu = () => {
+  const toogleDropDown = () => {
     setShowDropDownMenu(!showDropDownMenu);
   };
   const toggleNotifications = () => {
@@ -71,16 +71,14 @@ function Header() {
           />
           {showNotifications && <Notifications />}
         </div>
-        <Link to="/profile" className={styles.profileLink}>
-          <div className={styles.profilePic}>
-            <img
-              src="profile_pic.jpg"
-              alt="profile"
-              height={"48px"}
-              width={"48px"}
-            />
-          </div>
-        </Link>
+        <div className={styles.profilePic} onClick={toogleDropDown}>
+          <img
+            src="profile_pic.jpg"
+            alt="profile"
+            height={"48px"}
+            width={"48px"}
+          />
+        </div>
       </div>
     </div>
   );
