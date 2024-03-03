@@ -2,23 +2,23 @@ import styles from "./Grades.module.css";
 
 export const mockGradesData = [
   {
-    course: "Mathematics",
+    course: "Математика",
     grades: generateRandomGrades(5),
   },
   {
-    course: "History",
+    course: "Історія",
     grades: generateRandomGrades(6),
   },
   {
-    course: "Physics",
+    course: "Фізика",
     grades: generateRandomGrades(6),
   },
   {
-    course: "English",
+    course: "Професійна англійська мова",
     grades: generateRandomGrades(5),
   },
   {
-    course: "Computer Science",
+    course: "Інформатика",
     grades: generateRandomGrades(4),
   },
 ];

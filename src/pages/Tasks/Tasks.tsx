@@ -23,11 +23,11 @@ function Tasks() {
     return mockData;
   };
 
-  const upcomingTasks = generateMockData("task", 5, 14);
-  const upcomingTests = generateMockData("test", 5, 14);
+  const upcomingTasks = generateMockData("Лабораторна робота №", 5, 14);
+  const upcomingTests = generateMockData("ТЕСТ №", 5, 14);
 
-  const otherTasks = generateMockData("task", 5, 40);
-  const otherTests = generateMockData("test", 5, 40);
+  const otherTasks = generateMockData("Лабораторна робота", 5, 40);
+  const otherTests = generateMockData("Тест", 5, 40);
 
   return (
     <div className={styles.container}>
