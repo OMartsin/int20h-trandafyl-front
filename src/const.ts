@@ -1,0 +1,1 @@
+export const SERVER_URL = 'https://int20h-i6rjfxmega-lm.a.run.app/';
