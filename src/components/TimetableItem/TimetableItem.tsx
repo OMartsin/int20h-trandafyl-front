@@ -17,9 +17,9 @@ interface ScheduleProps {
 
 function getColorByType(type: string): string {
   const typeColors: { [key: string]: string } = {
-    Lecture: "#2ecc71",
-    Practical: "#3498db",
-    Laboratory: "#9b59b6",
+    Lecture: "#4B74C3",
+    Practical: "#EAA133",
+    Laboratory: "#954BC3",
   };
 
   return typeColors[type];

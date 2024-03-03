@@ -1,0 +1,23 @@
+.container {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  border-radius: 32px;
+  width: 24%;
+  min-height: 78vh;
+  background-color: white;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+.selected {
+  border-bottom: 1px solid #529050;
+}

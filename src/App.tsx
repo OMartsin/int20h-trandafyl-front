@@ -9,6 +9,7 @@ import Schedule from "./pages/Schedule/Schedule";
 import Header from "./components/Header/Header";
 import Chats from "./pages/Chats/Chats";
 import Profile from "./pages/Profile/Profile";
+import Test from "./pages/Test/Test";
 
 function App() {
   return (
@@ -67,6 +68,15 @@ function App() {
               <React.Fragment>
                 <Header />
                 <Profile />
+              </React.Fragment>
+            }
+          />
+          <Route
+            path="/test/*"
+            element={
+              <React.Fragment>
+                <Header />
+                <Test />
               </React.Fragment>
             }
           />

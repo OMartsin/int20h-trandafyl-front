@@ -1,0 +1,13 @@
+.container {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 86vh;
+  overflow: hidden;
+}

@@ -20,7 +20,9 @@ function Header() {
   useEffect(() => {
     setActiveLink(location.pathname);
   }, [location.pathname]);
-
+  const closeDropDown = () => {
+    setShowDropDownMenu(false);
+  };
   return (
     <div className={styles.container}>
       <div className={styles.languages}>
@@ -69,7 +71,7 @@ function Header() {
             width={"48px"}
           />
         </div>
-        {showDropDownMenu && <DropDown />}
+        {showDropDownMenu && <DropDown closeDropDown={closeDropDown} />}
       </div>
     </div>
   );

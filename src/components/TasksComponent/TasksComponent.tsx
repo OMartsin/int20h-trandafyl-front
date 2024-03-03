@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./TaskComponent.module.css";
 
 interface TaskInterface {
@@ -28,10 +29,12 @@ function TasksComponent({ tasks }: TasksComponentProps) {
         <div key={index} className={styles.task}>
           <p className={styles.column}>{task.title}</p>
           <p className={styles.column}>{task.deadlineDate}</p>
-          <div className={styles.doAction}>
-            <p>{task.type === "task" ? "Здати роботу" : "Пройти тест"}</p>
-            <img src="done.png" alt="done" height={"16px"} />
-          </div>
+          <Link to="/test" className={styles.link}>
+            <div className={styles.doAction}>
+              <p>{task.type === "task" ? "Здати роботу" : "Пройти тест"}</p>
+              <img src="done.png" alt="done" height={"16px"} />
+            </div>
+          </Link>
         </div>
       ))}
     </div>

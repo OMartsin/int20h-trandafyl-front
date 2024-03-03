@@ -41,7 +41,13 @@ function Profile() {
           </div>
         </div>
         <div className={styles.personalInfo}>
-          <h2 style={{ marginBottom: "16px" }}>Дані</h2>
+          <div className={styles.header}>
+            <h2 style={{ marginBottom: "16px" }}>Дані</h2>
+            <div className={styles.edit}>
+              <p>Змінити дані</p>
+              <img src="edit.png" alt="edit" height={"16px"} />
+            </div>
+          </div>
           <div className={styles.info}>
             <div className={styles.item}>
               <p className={styles.title}>Вік</p>

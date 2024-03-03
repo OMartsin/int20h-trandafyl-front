@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 32px;
+}
+.level {
+  color: black;
+}
+.buttons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.submitButton {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4caf50;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+.resultContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+.retakeButton {
+  border: none;
+  border-radius: 8px;
+  color: black;
+  background-color: white;
+  padding: 8px 16px;
+  width: auto;
+  cursor: pointer;
+}

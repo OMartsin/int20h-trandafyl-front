@@ -18,7 +18,13 @@
   justify-content: space-between;
   width: 30%;
 }
-
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 64px;
+  margin-bottom: 24px;
+}
 .profilePic,
 .personalInfo,
 .coursesContainer,
@@ -59,6 +65,9 @@
   align-items: center;
   justify-content: space-between;
   width: 18%;
+}
+h2 {
+  margin: 0 !important;
 }
 .name {
   height: 12%;
