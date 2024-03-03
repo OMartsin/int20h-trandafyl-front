@@ -33,30 +33,19 @@ function Header() {
           Мої курси
         </p>
       </Link>
-      <Link
-        to="/events"
-        className={`${styles.link} ${
-          activeLink === "/events" && styles.selected
-        }`}
-      >
-        <p>Події</p>
+      <Link to="/events" className={styles.link}>
+        <p className={activeLink === "/events" ? styles.selected : ""}>Події</p>
       </Link>
       <img src="logo.svg" alt="logo" height={"48px"} className={styles.logo} />
-      <Link
-        to="/schedule"
-        className={`${styles.link} ${
-          activeLink === "/schedule" && styles.selected
-        }`}
-      >
-        <p>Розклад</p>
+      <Link to="/schedule" className={styles.link}>
+        <p className={activeLink === "/schedule" ? styles.selected : ""}>
+          Розклад
+        </p>
       </Link>
-      <Link
-        to="/studying"
-        className={`${styles.link} ${
-          activeLink === "/studying" && styles.selected
-        }`}
-      >
-        <p>Навчання</p>
+      <Link to="/studying" className={styles.link}>
+        <p className={activeLink === "/studying" ? styles.selected : ""}>
+          Навчання
+        </p>
       </Link>
       <div className={styles.profile}>
         <Link to="/chats" className={styles.profileLink}>
