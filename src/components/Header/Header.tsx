@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import styles from "./Header.module.css";
 import Notifications from "../Notifications/Notifications";
+import DropDown from "../DropDown/DropDown";
 
 function Header() {
   const [showDropDownMenu, setShowDropDownMenu] = useState(false);
@@ -79,6 +80,7 @@ function Header() {
             width={"48px"}
           />
         </div>
+        {showDropDownMenu && <DropDown />}
       </div>
     </div>
   );
