@@ -14,8 +14,15 @@ function TasksComponent({ tasks }: TasksComponentProps) {
   return (
     <div className={styles.container}>
       <div className={styles.task}>
-        <p className={styles.column}>Завдання</p>
-        <p className={styles.column}>Здати до</p>
+        <p className={styles.column} style={{ fontWeight: "bold" }}>
+          Завдання
+        </p>
+        <p className={styles.column} style={{ fontWeight: "bold" }}>
+          Здати до
+        </p>
+        <p className={styles.column} style={{ fontWeight: "bold" }}>
+          {" "}
+        </p>
       </div>
       {tasks.map((task, index) => (
         <div key={index} className={styles.task}>

@@ -2,11 +2,16 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  background-color: white;
+  padding: 32px;
+  border-radius: 32px;
 }
 .task {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
 }
 
 .doAction {
@@ -14,7 +19,8 @@
   flex-direction: row;
   border: 2px solid #529050;
   border-radius: 20px;
-  padding: 8px 16px;
+  padding: 8px 0;
+  width: 168px;
   background-color: transparent;
   align-items: center;
   gap: 8px;

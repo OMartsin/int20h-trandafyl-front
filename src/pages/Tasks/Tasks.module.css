@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.deadlines {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

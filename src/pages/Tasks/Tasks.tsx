@@ -31,11 +31,11 @@ function Tasks() {
 
   return (
     <div className={styles.container}>
-      <div className={styles.upcomingDeadlines}>
+      <div className={styles.deadlines}>
         <h1>Дедлайни у найближчі 14 днів</h1>
         <TasksComponent tasks={upcomingTasks.concat(upcomingTests)} />
       </div>
-      <div className={styles.otherTasks}>
+      <div className={styles.deadlines}>
         <h1>Дедлайни</h1>
         <TasksComponent tasks={otherTasks.concat(otherTests)} />
       </div>
