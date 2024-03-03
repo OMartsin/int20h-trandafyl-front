@@ -1,0 +1,38 @@
+.container
+{
+    margin-top: 10rem;
+    max-width: 50%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    margin: 5rem;
+}
+.container img{
+    margin-left: 1rem;
+    border-radius: 10%;
+}
+.up-info{
+    display: flex;
+    flex-direction: row;
+}
+.up-info div{
+    padding: 1rem;
+}
+ .down-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+ .down-info div{
+    padding: 1rem;
+}
+.place-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+    ;
+ }
+ .place-div div{
+    padding: 1rem;
+}
+
