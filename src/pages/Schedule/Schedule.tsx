@@ -1,7 +1,8 @@
 import TimeTabletem from "../../components/TimetableItem/TimetableItem";
 import DaySchadule from "../../components/DaySchedule/DaySchadule";
 import styles from "./Schedule.module.css";
-import _ from "lodash";
+import _ from 'lodash';
+import { useEffect, useState } from "react";
 interface ScheduleItem {
   day: string;
   classNumber: number;
@@ -96,7 +97,16 @@ const mockSchedule: ScheduleItem[] = [
   // Інші об'єкти розкладу...
 ];
 function Schedule() {
-  const groupedSchedule = _.groupBy(mockSchedule, "day");
+  const userGroup = 'IT-27'; // Замініть це значення на групу користувача
+  const [filteredSchedule, setFilteredSchedule] = useState<ScheduleItem[]>([]);
+
+  useEffect(() => {
+    // Фільтрація розкладу за групою користувача
+    const filtered = mockSchedule.filter(schedule => schedule.group === userGroup)||[];
+    setFilteredSchedule(filtered);
+  }, [userGroup]); // Перевизначайте фільтрований розклад при зміні групи користувача
+  const groupedSchedule = _.groupBy(mockSchedule, 'day');
+
 
   return (
     <div className={styles.schedule}>
